@@ -12,9 +12,7 @@ FEATURES
 
 **Categorizes passwords as:**
 
-Weak
-Moderate
-Strong
+Weak / Moderate / Strong
 
 Provides clear, actionable feedback on how to improve a weak or moderate password
 
