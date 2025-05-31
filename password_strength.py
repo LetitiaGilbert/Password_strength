@@ -15,33 +15,33 @@ def check_password_strength(password):
     if length_criteria:
         score += 1
     else:
-        feedback.append("❌ Password should be at least 8 characters long.")
+        feedback.append(" Password should be at least 8 characters long.")
 
     if upper_criteria:
         score += 1
     else:
-        feedback.append("❌ Add at least one uppercase letter.")
+        feedback.append(" Add at least one uppercase letter.")
 
     if lower_criteria:
         score += 1
     else:
-        feedback.append("❌ Add at least one lowercase letter.")
+        feedback.append(" Add at least one lowercase letter.")
 
     if digit_criteria:
         score += 1
     else:
-        feedback.append("❌ Include at least one number.")
+        feedback.append(" Include at least one number.")
 
     if special_criteria:
         score += 1
     else:
-        feedback.append("❌ Use at least one special character (!@#$, etc.).")
+        feedback.append(" Use at least one special character (!@#$, etc.).")
 
     # Strength levels
     if score == 5:
-        strength = "✅ Strong Password"
+        strength = " Strong Password"
     else:
-        strength = "❌ Weak Password"
+        strength = " Weak Password"
 
     # Output
     print(f"\nPassword Strength: {strength}")
